@@ -1,0 +1,56 @@
+h2 {
+    font-size: 22px;
+    background-color: white;
+    font-weight: lighter;
+    margin-bottom: 4px;
+    margin-left: 18px;
+}
+
+* {
+    color: #676565;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin-left: 0;
+}
+
+form {
+    line-height: 1.42857143;
+    font-size: 11px;
+    background-color: #feeed6;
+    padding-top: 10px;
+}
+
+label {
+    font-weight: 700;
+}
+
+.small-bottom-margin {
+    margin-bottom: 4px;
+}
+
+input, textarea {
+    border: none;
+    background-color: white;
+    padding: 6px 12px;
+    width: 534px;
+    font-size: 11px;
+}
+
+input {
+    height: 15px;
+}
+
+.form-group {
+    margin-bottom: 13px;
+    margin-left: 18px;
+}
+
+button {
+    padding: 7px 10px;
+    color: white;
+    background-color: #378db2;
+    font-weight: 700;
+    border: none;
+    margin-left: 457px;
+    font-size: inherit;
+    margin-bottom: 10px;
+}
