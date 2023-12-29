@@ -1,26 +1,33 @@
 * {
-    background-color: blanchedalmond;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #676565;
 }
 
-.text-blue {
+body {
+    background-color: #feeed6;
+}
+
+.container {
+    max-width: 600px;
+    margin: 10px auto 0;
+}
+
+.blue-text {
     color: #378db2;
     font-weight: 700;
 }
 
 .sub-title {
-    clear: left;
     margin-bottom: 0.3em;
     font-size: 0.85em;
     line-height: 1.42857143;
 }
 
-.price-without-discount {
+.crossed-out-text {
     text-decoration: line-through;
 }
 
-h1 {
+.course-title {
     text-transform: uppercase;
     margin-top: 0;
     font-size: 1.35em;
@@ -29,7 +36,7 @@ h1 {
     font-weight: 500;
 }
 
-p {
+.course-description {
     margin: 0 0 10px;
     text-indent: 1em;
     font-size: 0.77em;
