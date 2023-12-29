@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Анкета на получение визы</title>
 </head>
 <body>
 <form>
@@ -10,48 +10,41 @@
         Ваше имя: <input type="text" placeholder="Ваше имя" name="clientName">
     </label>
 </form>
-<p></p>
+<br>
 <form>
     <label>
         Ваша фамилия: <input type="text" placeholder="Ваша фамилия" name="clientSurname">
     </label>
 </form>
-<p></p>
+<br>
 <form>
     <label>
         Номер заграничного паспорта: <input type="number" placeholder="ххххххх" name="pussportNumber">
     </label>
 </form>
-<p></p>
+<br>
 <form>
     <label>Виза запрашивается для: </label><br>
-    <label>
-        <input type="radio" value="singleEntry" name="entry">
-    </label> Однократного въезда<br>
-    <label>
-        <input type="radio" value="twoEntries" name="entry">
-    </label> Двукратного въезда<br>
-    <label>
-        <input type="radio" value="multipleEntries" name="entry">
-    </label> Многократного въезда<br>
+    <input type="radio" id="singleEntry" name="entry"><label for="singleEntry"> Однократного въезда</label>
+    <br>
+    <input type="radio" id="twoEntries" name="entry"><label for="twoEntries"> Двукратного въезда</label>
+    <br>
+    <input type="radio" id="multipleEntries" name="entry"><label for="multipleEntries"> Многократного въезда</label>
+    <br>
 </form>
-<p></p>
+<br>
 <form>
     <label>Семейное положение: </label><br>
-    <label>
-        <input type="radio" value="married" name="familyStatus">
-    </label> Замужем/Женат<br>
-    <label>
-        <input type="radio" value="divorced" name="familyStatus">
-    </label> Разведен(а)<br>
-    <label>
-        <input type="radio" value="single" name="familyStatus">
-    </label> Не замужем/Не женат<br>
-    <label>
-        <input type="radio" value="widow" name="familyStatus">
-    </label> Вдовец/Вдова<br>
+    <input type="radio" id="married" name="familyStatus"><label for="married"> Замужем/Женат</label>
+    <br>
+    <input type="radio" id="divorced" name="familyStatus"><label for="divorced"> Разведен(а)</label>
+    <br>
+    <input type="radio" id="single" name="familyStatus"><label for="single"> Не замужем/Не женат</label>
+    <br>
+    <input type="radio" id="widow" name="familyStatus"><label for="widow"> Вдовец/Вдова</label>
+    <br>
 </form>
-<p></p>
+<br>
 <form>
     <label>Выберете город подачи заявления: </label><br>
     <label>
@@ -63,7 +56,7 @@
         </select>
     </label>
 </form>
-<p></p>
+<br>
 <form>
     <label>Цель поездки: </label><br>
     <label>
@@ -79,33 +72,29 @@
         </select>
     </label>
 </form>
-<p></p>
+<br>
 <form>
     <label>Если цель поездки иная, укажите её ниже: </label> <br>
     <label>
-        <textarea cols="30" rows="4">Напишите здесь</textarea>
+        <textarea placeholder="Напишите здесь" cols="30" rows="4"></textarea>
     </label><br>
 </form>
-<p></p>
+<br>
 <form>
     <label>Средства: </label><br>
-    <label>
-        <input type="checkbox" value="cash">
-    </label> Наличные деньги<br>
-    <label>
-        <input type="checkbox" value="travellersCheques">
-    </label> Дорожные чеки<br>
-    <label>
-        <input type="checkbox" value="creditCard">
-    </label> Кредитная карта<br>
-    <label>
-        <input type="checkbox" value="prePaidAccomodation">
-    </label> Место проживание предоплачено<br>
-    <label>
-        <input type="checkbox" value="prePaidTransport">
-    </label> Транспорт предоплачен<br>
+    <input type="checkbox" id="cash"><label for="cash"> Наличные деньги</label>
+    <br>
+    <input type="checkbox" id="travellersCheques"><label for="travellersCheques"> Дорожные чеки</label>
+    <br>
+    <input type="checkbox" id="creditCard"><label for="creditCard"> Кредитная карта</label>
+    <br>
+    <input type="checkbox" id="prePaidAccomodation"><label for="prePaidAccomodation"> Место проживание
+    предоплачено</label>
+    <br>
+    <input type="checkbox" id="prePaidTransport"><label for="prePaidTransport"> Транспорт предоплачен</label>
+    <br>
 </form>
-<p></p>
+<br>
 <form>
     <label>Выберете страны в которых вы были из предложенных ниже: </label><br>
     <label>
@@ -120,16 +109,16 @@
         </select>
     </label>
 </form>
-<p></p>
+<br>
 <form>
     <label>Комментарий: </label> <br>
     <label>
-        <textarea cols="30" rows="4">Напишите здесь</textarea>
+        <textarea placeholder="Напишите здесь" cols="30" rows="4"></textarea>
     </label><br>
 </form>
-<p></p>
+<br>
 <button>Отправить</button>
-<p></p>
+<br>
 <a href="form2.html">Ссылка на форму 2</a>
 </body>
 </html>
