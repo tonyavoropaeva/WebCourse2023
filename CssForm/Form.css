@@ -1,6 +1,6 @@
-h2 {
+h1 {
     font-size: 22px;
-    background-color: white;
+    background-color: #FFFFFF;
     font-weight: lighter;
     margin-bottom: 4px;
     margin-left: 18px;
@@ -29,7 +29,7 @@ label {
 
 input, textarea {
     border: none;
-    background-color: white;
+    background-color: #FFFFFF;
     padding: 6px 12px;
     width: 534px;
     font-size: 11px;
@@ -46,7 +46,7 @@ input {
 
 button {
     padding: 7px 10px;
-    color: white;
+    color: #FFFFFF;
     background-color: #378db2;
     font-weight: 700;
     border: none;
