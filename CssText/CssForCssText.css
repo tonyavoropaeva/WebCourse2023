@@ -3,13 +3,10 @@
     color: #676565;
 }
 
-body {
-    background-color: #feeed6;
-}
-
 .container {
-    max-width: 720px;
-    margin: 11px auto 0;
+    max-width: 730px;
+    background-color: #feeed6;
+    padding: 11px 12px 3px 11px;
 }
 
 .blue-text {
@@ -40,5 +37,6 @@ body {
     margin: 0 0 10px;
     text-indent: 1em;
     font-size: 0.96em;
-    line-height: 1.369;
+    line-height: 1.4;
+    text-align: justify;
 }
