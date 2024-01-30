@@ -1,0 +1,28 @@
+.namesTable {
+    width: 860px;
+    border-collapse: collapse;
+    font-family: Calibri, Helvetica, sans-serif;
+    font-size: 23px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #EEEEEE;
+}
+
+.tittle {
+    background-color: #3598DB;
+    color: #EEEEEE;
+    text-align: left;
+}
+
+.cell {
+    padding: 12px 25px 12px 10px;
+    border: 1px solid #D3D3D3FF;
+    font-weight: normal;
+}
+
+@media only screen and (max-width: 860px) {
+    .namesTable {
+        width: 100%;
+    }
+}
