@@ -1,12 +1,15 @@
 * {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #676565;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .container {
     max-width: 730px;
     background-color: #feeed6;
-    padding: 11px 12px 3px 11px;
+    padding: 11px 11px 3px 11px;
 }
 
 .blue-text {
