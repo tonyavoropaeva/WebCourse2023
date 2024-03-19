@@ -1,4 +1,4 @@
-.namesTable {
+.table {
     width: 860px;
     border-collapse: collapse;
     font-family: Calibri, Helvetica, sans-serif;
@@ -6,23 +6,23 @@
 }
 
 tbody tr:nth-child(odd) {
-    background-color: #EEEEEE;
+    background-color: #eee;
 }
 
-.tittle {
+thead {
     background-color: #3598DB;
-    color: #EEEEEE;
+    color: #eee;
     text-align: left;
 }
 
-.cell {
+td, th {
     padding: 12px 25px 12px 10px;
     border: 1px solid #D3D3D3FF;
     font-weight: normal;
 }
 
 @media only screen and (max-width: 860px) {
-    .namesTable {
+    .table {
         width: 100%;
     }
 }
