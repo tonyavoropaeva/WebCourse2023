@@ -6,7 +6,7 @@ body {
 .container {
     max-width: 730px;
     background-color: #feeed6;
-    padding: 11px 11px 3px 11px;
+    padding: 11px 11px 3px;
 }
 
 .blue-text {
