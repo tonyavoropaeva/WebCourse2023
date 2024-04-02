@@ -2,26 +2,24 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "HONOR Sans", sans-serif;
+}
+
 .form {
-    max-width: 730px;
-    padding: 11px 11px 3px 11px;
+    max-width: 500px;
+    padding: 11px 11px 3px;
     vertical-align: top;
-    width: 500px;
     height: 210px;
-    border: 10px groove pink;
+    border: 10px groove #FFC0CB;
     position: relative;
 }
 
 .border {
     padding-left: 5px;
-    border: thin solid black;
+    border: thin solid #000;
     position: absolute;
     right: 20px;
-
-}
-
-body {
-    font-family: "HONOR Sans", sans-serif;
 }
 
 .form-group {
@@ -35,16 +33,16 @@ body {
 }
 
 .button {
-    padding:4px 10px;
-    color: #000000FF;
-    background-color: #FFC0CBFF;
+    padding: 4px 10px;
+    color: #000;
+    background-color: #FFC0CB;
     cursor: pointer;
     position: absolute;
     right: 20px;
     font-weight: 700;
 }
 
-input {
+.input-Celsius {
     font-size: 1rem;
     padding: 1px 2px;
 }

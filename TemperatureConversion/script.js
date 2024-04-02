@@ -1,22 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const newTextField = document.getElementById("new-text-field");
-    const addForm = document.getElementById("new-form");
+    const textField = document.getElementById("text-field");
+    const addForm = document.getElementById("form");
 
     addForm.addEventListener("submit", function (e) {
         e.preventDefault();
-        const temperature = newTextField.value.trim();
+        const celsiusTemperature = textField.value.trim();
 
-        if (temperature.length === 0) {
+        if (celsiusTemperature.length === 0) {
             return;
         }
 
-        const kelvin = document.getElementById("Kelvin");
-        const fahrenheit = document.getElementById("Fahrenheit");
+        const kelvin = document.getElementById("kelvin-output");
+        const fahrenheit = document.getElementById("fahrenheit-output");
 
         kelvin.value = 0;
         fahrenheit.value = 0;
 
-        document.getElementById("Kelvin").innerHTML = temperature * 1 + 273.15;
-        document.getElementById("Fahrenheit").innerHTML = temperature * 9 / 5 + 32;
+        document.getElementById("kelvin-output").value = celsiusTemperature * 1 + 273.15;
+        document.getElementById("fahrenheit-output").value = celsiusTemperature * 9 / 5 + 32;
     });
 });
