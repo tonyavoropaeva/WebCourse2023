@@ -4,17 +4,17 @@
 }
 
 .add-todo-page .error-message {
-    color: #FF0000FF;
+    color: #f00;
     display: none;
 }
 
 .add-todo-page .error-message2 {
-    color: #FF0000FF;
+    color: #f00;
     display: none;
 }
 
 .add-todo-page .invalid .invalid2 {
-    border-color: #FF0000FF;
+    border-color: #f00;
 }
 
 .add-todo-page .invalid + .error-message {

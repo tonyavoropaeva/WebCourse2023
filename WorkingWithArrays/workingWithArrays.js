@@ -1,59 +1,55 @@
-~function () {
-// Создайте массив чисел
-    let array = [3, 20, 11, 7, 15, 8, 41, 2, 9, 30, 17, 1];
+(function () {
+//  Создайте массив чисел
+    const numbersArray = [3, 20, 11, 7, 15, 8, 41, 2, 9, 30, 17, 1];
 
-// Отсортируйте его по убыванию
-    const sortNumbersArrayInDescendingOrder = numbersArray =>
-        numbersArray.sort(function (e1, e2) {
-            return e2 - e1;
-        });
-
-    sortNumbersArrayInDescendingOrder(array);
-    console.log("Отсортированный массив: " + array);
-
-// Получите подмассив из первых 5 элементов
-    const getFirstFiveElements = array => {
-        return array.slice(0, 5);
+//  Отсортируйте его по убыванию
+    function sortNumbersArrayInDescendingOrder(numbersArray) {
+        numbersArray.sort((e1, e2) => e2 - e1);
     }
 
-    console.log("Первые пять элементов массива: " + getFirstFiveElements(array));
+    sortNumbersArrayInDescendingOrder(numbersArray);
+    console.log("Отсортированный массив: " + numbersArray);
 
-// подмассив из последних 5 элементов
-    const getLastFiveElements = array => {
-        return array.slice(-5);
+//  Получите подмассив из первых 5 элементов
+    function getFirstFiveElements(numbersArray) {
+        return numbersArray.slice(0, 5);
     }
 
-    console.log("Последние пять элементов массива: " + getLastFiveElements(array));
+    console.log("Первые пять элементов массива: " + getFirstFiveElements(numbersArray));
 
-// Найдите сумму элементов массива, которые являются
-// четными числами
-    const sumEvenNumbers = numbersArray => {
-        return getEvenNumbers(numbersArray).reduce(function (total, amount) {
-            return total + amount;
-        }, 0);
+//  Подмассив из последних 5 элементов
+    function getLastFiveElements(numbersArray) {
+        return numbersArray.slice(-5);
     }
 
-    console.log("Сумма четных элементов массива: " + sumEvenNumbers(array));
+    console.log("Последние пять элементов массива: " + getLastFiveElements(numbersArray));
 
-// Создайте массив чисел от 1 до 100, в таком порядке
+//  Найдите сумму элементов массива, которые являются
+//  четными числами
+    function getEvenNumbersSum(numbersArray) {
+        return getEvenNumbers(numbersArray).reduce(
+            ((sum, evenNumber) => sum + evenNumber), 0);
+    }
+
+    console.log("Сумма четных элементов массива: " + getEvenNumbersSum(numbersArray));
+
+//  Создайте массив чисел от 1 до 100, в таком порядке
     const hundredNumbersArray = [];
 
-    for (let i = 0; i < 100; ++i) {
-        hundredNumbersArray.push(i + 1);
+    for (let i = 1; i <= 100; ++i) {
+        hundredNumbersArray.push(i);
     }
 
     console.log(hundredNumbersArray);
 
-// Получите список квадратов четных чисел из этого массива
+//  Получите список квадратов четных чисел из этого массива
     const getEvenNumbersSquares = numbersArray => {
         return getEvenNumbers(numbersArray).map(x => x * x);
-    }
+    };
 
     console.log(getEvenNumbersSquares(hundredNumbersArray));
 
     function getEvenNumbers(numbersArray) {
-        return numbersArray.filter(function (number) {
-            return number % 2 === 0;
-        });
+        return numbersArray.filter(number => number % 2 === 0);
     }
-}();
+})();

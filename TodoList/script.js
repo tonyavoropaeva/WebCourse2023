@@ -41,7 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
 
                 newTodo.querySelector(".save-button").addEventListener("click", function () {
-                    //TODO
                     const changedTodoText = editTextField.value.trim();
                     todoList.classList.remove("invalid2");
 
