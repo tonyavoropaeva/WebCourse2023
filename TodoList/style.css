@@ -1,6 +1,19 @@
+* {
+    background-color: #cebbf6;
+}
+
+.add-todo-page {
+    font-family: "HONOR Sans", sans-serif;
+    max-width: 600px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 .add-todo-page .add-todo-form > * {
-    display: inline-block;
     vertical-align: top;
+    display: inline-block;
 }
 
 .add-todo-page .error-message {
@@ -8,39 +21,86 @@
     display: none;
 }
 
-.add-todo-page .error-message2 {
+.error-message-for-todo-input {
     color: #f00;
-    display: none;
+    width: 100%;
+    background-color: rgba(255, 192, 203, 0);
 }
 
-.add-todo-page .invalid .invalid2 {
-    border-color: #f00;
+.todo-item-text, .edit-text-field {
+    width: 400px;
+    display: inline-block;
+    font-size: 18px;
+    padding: 1px 5px;
+    text-align: left;
+    word-wrap: break-word;
+    border-radius: 15px;
+    background-color: Snow;
+}
+
+#new-todo-text-field {
+    height: 30px;
+    width: 300px;
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+#new-todo-text-field:hover, .edit-text-field:hover {
+    background-color: #d4c3f6;
+}
+
+.add-todo-page .add-button {
+    background-image: url("image/buttonAdd.png");
+}
+
+.add-todo-page .delete-button {
+    background-image: url("image/buttonDelete.png");
+    border-radius: 3px;
+}
+
+.add-todo-page .edit-button {
+    background-image: url("image/buttonEdit.png");
+    border-radius: 3px;
+}
+
+.cancel-button {
+    background-image: url("image/buttonCancel.png");
+}
+
+.save-button {
+    background-image: url("image/buttonSave.png");
+}
+
+.add-todo-page button {
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-size: cover;
+    transition: box-shadow 0.3s;
+    border-radius: 50px;
+    margin-left: 10px;
+}
+
+.add-todo-page button:hover {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 }
 
 .add-todo-page .invalid + .error-message {
     display: block;
 }
 
-.add-todo-page .invalid2 + .error-message2 {
-    display: block;
-}
-
-.add-todo-page .todo-list {
-    padding-left: 0;
-}
-
-.add-todo-page .todo-list {
-    padding-left: 0;
-}
-
-.add-todo-page .delete-button {
-    margin-left: 5px;
-}
-
-.add-todo-page .edit-button {
-    margin-left: 5px;
+.invalid {
+    border-color: #f00;
 }
 
 .add-todo-page .todo-item + .todo-item {
     margin-top: 10px;
+}
+
+.todo-item {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }

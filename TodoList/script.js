@@ -18,9 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
         newTodo.classList.add("todo-item");
 
         function setViewMode() {
-            newTodo.innerHTML = '<span class = "todo-item-text"></span>' +
-                '<button class = "delete-button" type="button">Удалить</button>' +
-                '<button class = "edit-button" type="button">Редактировать</button>';
+            newTodo.innerHTML = '<output class="todo-item-text"></output>' +
+                '<button class="delete-button" type="button"></button>' +
+                '<button class="edit-button" type="button"></button>';
 
             newTodo.querySelector(".todo-item-text").textContent = newTodoText;
 
@@ -29,23 +29,40 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
             newTodo.querySelector(".edit-button").addEventListener("click", function () {
-                newTodo.innerHTML = '<input type="text" class = "edit-text-field">' +
-                    '<button class = "cancel-button" type="button">Отменить</button>' +
-                    '<button class = "save-button" type="button">Сохранить</button>';
+                newTodo.innerHTML = '<input type="text" class="edit-text-field">' +
+                    '<button class="cancel-button" type="button"></button>' +
+                    '<button class="save-button" type="button"></button>';
 
                 const editTextField = newTodo.querySelector(".edit-text-field");
+
                 editTextField.value = newTodoText;
 
                 newTodo.querySelector(".cancel-button").addEventListener("click", function () {
                     setViewMode();
                 });
 
+                newTodo.querySelector(".edit-text-field").addEventListener("keypress", function (f) {
+                    if (f.keyCode === 13) {
+                        f.preventDefault();
+
+                        newTodo.querySelector(".save-button").dispatchEvent(new Event("click", {
+                            cancelable: true
+                        }));
+                    }
+                });
+
                 newTodo.querySelector(".save-button").addEventListener("click", function () {
                     const changedTodoText = editTextField.value.trim();
-                    todoList.classList.remove("invalid2");
 
                     if (changedTodoText.length === 0) {
-                        todoList.classList.add("invalid2");
+                        const errorMessage = document.createElement("div");
+                        errorMessage.textContent = "Необходимо указать текст";
+                        errorMessage.className = "error-message-for-todo-input";
+
+                        if (newTodo.childNodes.length === 3) {
+                            newTodo.appendChild(errorMessage);
+                        }
+
                         return;
                     }
 

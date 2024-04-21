@@ -8,20 +8,19 @@
 </head>
 <body>
 <div class="add-todo-page">
-    <h1>TODO List</h1>
+    <h1>Список задач</h1>
 
     <form class="add-todo-form" id="add-todo-form">
         <div>
-            <label for="new-todo-text-field"></label><input id="new-todo-text-field" type="text">
+            <label for="new-todo-text-field"></label><input id="new-todo-text-field" type="text" placeholder="Задача">
             <div class="error-message">Необходимо указать текст</div>
         </div>
-        <button class="add-button" id="add-button">Добавить</button>
+        <button class="add-button" id="add-button"></button>
     </form>
 
     <form class="edit-todo-form" id="edit-todo-form">
         <div>
             <ul class="todo-list" id="todo-list"></ul>
-            <div class="error-message2">Необходимо указать текст</div>
         </div>
     </form>
 </div>
