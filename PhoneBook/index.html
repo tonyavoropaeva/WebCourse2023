@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Телефонная книга</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+<form class="get-contact-form" id="get-contact-form">
+    <div class="form-group">
+        <label>
+            <div>Имя:</div>
+            <input id="input-name" class="input-contact" type="text" placeholder="Имя"  maxlength="15">
+            <div class="error-message">Необходимо указать имя</div>
+        </label>
+    </div>
+    <div class="form-group">
+        <label>
+            <div>Фамилия:</div>
+            <input id="input-surname" class="input-contact" type="text" placeholder="Фамилия" maxlength="20">
+            <div class="error-message">Необходимо указать фамилию</div>
+        </label>
+    </div>
+    <div class="form-group">
+        <label>
+            <div>Номер телефона:</div>
+            <input id="input-number" class="input-contact" type="number" placeholder="Номер телефона" maxlength="12">
+            <div class="error-message">Необходимо указать номер телефона</div>
+        </label>
+    </div>
+    <button id="add-button">Добавить</button>
+</form>
+
+<div class="contact-table-form">
+    <table class="contacts-book-table">
+        <thead>
+        <tr>
+            <td>Имя</td>
+            <td>Фамилия</td>
+            <td>Номер телефона</td>
+            <td></td>
+        </tr>
+        </thead>
+        <tbody id="body-table">
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

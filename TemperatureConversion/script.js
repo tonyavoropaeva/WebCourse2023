@@ -1,20 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const inputFieldCelsius = document.getElementById("text-field");
     const form = document.getElementById("form");
+    const celsiusInputField = document.getElementById("text-field");
+    const kelvinOutputField = document.getElementById("kelvin-output");
+    const fahrenheitOutputField = document.getElementById("fahrenheit-output");
 
     form.addEventListener("submit", function (e) {
         e.preventDefault();
 
-        const celsiusTemperature = inputFieldCelsius.value.trim();
+        const celsiusTemperatureString = celsiusInputField.value.trim();
 
-        if (celsiusTemperature.length === 0) {
+        if (celsiusTemperatureString.length === 0) {
             return;
         }
 
-        const outputFieldKelvin = document.getElementById("kelvin-output");
-        const outputFieldFahrenheit = document.getElementById("fahrenheit-output");
+        const celsiusTemperatureNumber = Number(celsiusTemperatureString);
 
-        outputFieldKelvin.value = celsiusTemperature * 1 + 273.15;
-        outputFieldFahrenheit.value = celsiusTemperature * 9 / 5 + 32;
+        kelvinOutputField.value = celsiusTemperatureNumber + 273.15;
+        fahrenheitOutputField.value = celsiusTemperatureNumber * 9 / 5 + 32;
     });
 });
