@@ -8,36 +8,30 @@
 </head>
 <body>
 <header>
-    <h1 class="tittle">Отправить заявку</h1>
+    <h1 class="title">Отправить заявку</h1>
 </header>
 <div class="container-bg-color">
     <form class="form-application">
-        <div class="form-group">
-            <label class="bold">
-                <div class="small-bottom-margin">Ваше имя</div>
-                <input class="form-input" type="text" placeholder="Ваше имя *">
-            </label>
+        <div class="bold form-group">
+            <label for="name-input">Ваше имя:</label>
+            <input class="form-input" id="name-input" type="text" placeholder="Ваше имя *">
         </div>
-        <div class="form-group">
-            <label class="bold">
-                <div class="small-bottom-margin">Ваш номер телефона</div>
-                <input class="form-input" type="text" placeholder="Ваш номер телефона *">
-            </label>
+        <div class="bold form-group">
+            <label for="telephone-number-input">Ваш номер телефона</label>
+            <input class="form-input" id="telephone-number-input" type="text" placeholder="Ваш номер телефона *">
         </div>
-        <div class="form-group">
-            <label class="bold">
-                <div class="small-bottom-margin">Ваш email или VK</div>
-                <input class="form-input" type="text" placeholder="Ваш email или VK *">
-            </label>
+        <div class="bold form-group">
+            <label for="email-input">Ваш email или VK</label>
+            <input class="form-input" id="email-input" type="text" placeholder="Ваш email или VK *">
         </div>
-        <div class="form-group">
-            <label class="bold">
-                <div class="small-bottom-margin">Комментарий</div>
-                <textarea class="form-textarea" placeholder="Комментарий (не обязательно)"></textarea>
-            </label>
+        <div class="bold form-group">
+            <label for="comment-textarea">Комментарий</label>
+            <textarea class="form-textarea" id="comment-textarea" placeholder="Комментарий (не обязательно)"></textarea>
         </div>
         <div class="help-block">Заполните и отправьте форму, и мы перезвоним Вам по указанному номеру</div>
-        <button class="button">Отправить заявку</button>
+        <div class="position-right">
+            <button class="button">Отправить заявку</button>
+        </div>
     </form>
 </div>
 </body>

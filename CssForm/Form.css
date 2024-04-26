@@ -2,27 +2,29 @@
     box-sizing: border-box;
 }
 
-.tittle {
+.title {
+    width: 700px;
     font-size: 29px;
-    background-color: #FFFFFF;
+    background-color: #fff;
     font-weight: lighter;
     margin-bottom: 4px;
     margin-left: 22px;
 }
 
 .container-bg-color {
+    max-width: 744px;
     background-color: #feeed6;
     padding-top: 1em;
-    padding-bottom: 3em;
+    padding-bottom: 14px;
 }
 
 body {
     color: #676565;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .help-block {
-    margin-top: 5px;
+    margin-top: -7px;
     margin-bottom: 10px;
     color: #737373;
 }
@@ -30,10 +32,9 @@ body {
 .form-application {
     line-height: 1.42857143;
     font-size: 14px;
-    max-width: 744px;
     padding-right: 22px;
     padding-left: 22px;
-    position: relative
+    position: relative;
 }
 
 .bold, .button {
@@ -41,14 +42,15 @@ body {
 }
 
 .small-bottom-margin {
-    margin-bottom: 4px;
+    margin-bottom: 10px; /* 4*/
 }
 
 .form-input, .form-textarea {
     border: none;
-    background-color: #FFFFFF;
+    background-color: #fff;
     padding: 6px 12px;
     font-size: 14px;
+    margin-top: 4px;
 }
 
 .form-input {
@@ -58,7 +60,7 @@ body {
 
 .form-textarea {
     width: 100%;
-    height: 102px;
+    height: 115px;
     resize: vertical;
 }
 
@@ -68,13 +70,16 @@ body {
 
 .button {
     padding: 7px 10px;
-    color: #FFFFFF;
+    color: #fff;
     background-color: #378db2;
     border: none;
     font-size: inherit;
     cursor: pointer;
-    position: absolute;
     right: 2ex;
+}
+
+.position-right {
+    text-align: right;
 }
 
 .button:hover {
