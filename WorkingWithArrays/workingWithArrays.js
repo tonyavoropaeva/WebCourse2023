@@ -26,6 +26,10 @@
 
     //  Найдите сумму элементов массива, которые являются
     //  четными числами
+    function getEvenNumbers(numbersArray) {
+        return numbersArray.filter(number => number % 2 === 0);
+    }
+
     function getEvenNumbersSum(numbersArray) {
         return getEvenNumbers(numbersArray)
             .reduce((sum, evenNumber) => sum + evenNumber, 0);
@@ -48,8 +52,4 @@
     }
 
     console.log(getEvenNumbersSquares(hundredNumbersArray));
-
-    function getEvenNumbers(numbersArray) {
-        return numbersArray.filter(number => number % 2 === 0);
-    }
 })();
