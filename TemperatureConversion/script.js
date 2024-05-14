@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const celsiusTemperatureString = celsiusInputField.value.trim();
 
         if (celsiusTemperatureString.length === 0) {
+            alert("Введите число");
             return;
         }
 
