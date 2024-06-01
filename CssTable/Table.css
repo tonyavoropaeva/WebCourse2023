@@ -1,10 +1,10 @@
 .persons-table {
-    max-width: 860px;
+    max-width: 863px;
     table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
     font-family: Calibri, Helvetica, sans-serif;
-    font-size: 22px;
+    font-size: 23px;
 }
 
 .persons-table tbody tr:nth-child(odd) {
@@ -17,9 +17,29 @@
     text-align: left;
 }
 
+.persons-table th {
+    padding-top: 12px;
+    padding-bottom: 11px;
+}
+
+.persons-table td {
+    padding-top: 13px;
+    padding-bottom: 12px;
+}
+
 .persons-table td, .persons-table th {
-    padding: 12px;
     border: 1px solid #d3d3d3;
     font-weight: normal;
 }
 
+.with\=20\% {
+    width: 20%;
+}
+
+.with\=37\% {
+    width: 37%;
+}
+
+.with\=23\% {
+    width: 23%;
+}
