@@ -103,45 +103,19 @@
 // Получите объект с информацией по всем странам такого
 // вида: ключ – название страны, значение – суммарная
 // численность по стране
-    /* function getCountriesPopulations(countries) {
-         let countriesPopulations = new Map();
-
-         for (let i = 0; i < countries.length; ++i) {
-             const country = countries[i];
-             let totalPopulation = 0;
-
-             country.cities.forEach((city) => {
-                 totalPopulation += city.population;
-             });
-
-             countriesPopulations.set(country.name, totalPopulation);
-         }
-
-         countriesPopulations.forEach((value, key) => {
-             console.log(`${key}: ${value}`);
-         });
-     }*/
-
     function getCountriesPopulations(countries) {
         let countriesPopulations = {};
 
-        for (let i = 0; i < countries.length; ++i) {
-            const country = countries[i];
-
-            // имя страны
-            console.log(country.name);
-
+        countries.forEach((country) => {
             let totalPopulation = 0;
 
-            // численность
             country.cities.forEach((city) => {
                 totalPopulation += city.population;
             });
 
-            console.log(totalPopulation);
-        }
+            countriesPopulations[country.name] = totalPopulation;
+        })
 
-        //console.log(countriesPopulations);
         return countriesPopulations;
     }
 
