@@ -1,4 +1,4 @@
-* {
+body {
     background-color: #cebbf6;
 }
 
@@ -25,27 +25,31 @@
     color: #f00;
     width: 100%;
     background-color: rgba(255, 192, 203, 0);
+    padding-right: 70px;
 }
 
 .todo-item-text, .edit-text-field {
     width: 400px;
+    height: 30px;
     display: inline-block;
     font-size: 18px;
-    padding: 1px 5px;
+    padding: 1px 13px;
     text-align: left;
     word-wrap: break-word;
-    border-radius: 15px;
-    background-color: Snow;
+    border-radius: 18px;
+    background-color: #fffafaff;
 }
 
-#new-todo-text-field {
+.new-todo-text-field {
     height: 30px;
     width: 300px;
-    border-radius: 15px;
+    border-radius: 18px;
     font-size: 18px;
+    padding-left: 13px;
+    background-color: #cebbf6;
 }
 
-#new-todo-text-field:hover, .edit-text-field:hover {
+.new-todo-text-field:hover, .edit-text-field:hover {
     background-color: #d4c3f6;
 }
 
@@ -72,13 +76,14 @@
 }
 
 .add-todo-page button {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     border: none;
     background-size: cover;
     transition: box-shadow 0.3s;
     border-radius: 50px;
     margin-left: 10px;
+    background-color: #cebbf6;
 }
 
 .add-todo-page button:hover {

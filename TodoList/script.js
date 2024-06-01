@@ -56,6 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     if (changedTodoText.length === 0) {
                         const errorMessage = document.createElement("div");
+                     //   document.getElementById("edit-text-field").classList.add("invalid");
                         errorMessage.textContent = "Необходимо указать текст";
                         errorMessage.className = "error-message-for-todo-input";
 
