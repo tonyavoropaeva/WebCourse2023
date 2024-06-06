@@ -40,7 +40,7 @@ $(function () {
                     setViewMode();
                 });
 
-                newTodo.find(".edit-text-field").keypress(function (f) {
+                editTextField.keypress(function (f) {
                     if (f.keyCode === 13) {
                         f.preventDefault();
 
@@ -57,7 +57,7 @@ $(function () {
                         errorMessage.className = "error-message-for-todo-input";
                         newTodo.append(errorMessage);
 
-                        $(errorMessage).toggle(newTodo.childNodes.length === 3)
+                        $(errorMessage).toggle(newTodo.childNodes.length === 3);
 
                         return;
                     }

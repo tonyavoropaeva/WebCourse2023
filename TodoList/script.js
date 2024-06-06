@@ -19,8 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         function setViewMode() {
             newTodo.innerHTML = '<output class="todo-item-text"></output>' +
-                '<button class="delete-button" type="button"></button>' +
-                '<button class="edit-button" type="button"></button>';
+                '<div class="buttons-group"><button class="delete-button" type="button"></button>' +
+                '<button class="edit-button" type="button"></button></div>';
 
             newTodo.querySelector(".todo-item-text").textContent = newTodoText;
 
@@ -30,8 +30,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
             newTodo.querySelector(".edit-button").addEventListener("click", function () {
                 newTodo.innerHTML = '<input type="text" class="edit-text-field">' +
-                    '<button class="cancel-button" type="button"></button>' +
-                    '<button class="save-button" type="button"></button>';
+                    '<div>Необходимо указать текст</div>' +
+                    '<div class="buttons-group"><button class="cancel-button" type="button"></button>' +
+                    '<button class="save-button" type="button"></button></div>';
 
                 const editTextField = newTodo.querySelector(".edit-text-field");
 
